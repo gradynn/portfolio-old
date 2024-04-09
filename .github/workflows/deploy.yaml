@@ -30,5 +30,5 @@ jobs:
       with:
         branch: main
         folder: build
-        repository: gradynn.github.io
+        repository-name: gradynn/gradynn.github.io
         token: ${{ secrets.GITHUB_TOKEN }}
