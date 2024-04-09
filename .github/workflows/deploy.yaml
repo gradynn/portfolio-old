@@ -30,6 +30,6 @@ jobs:
       with:
         folder: build
         repository-name: gradynn/gradynn.github.io
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAGES_DEPLOY_SECRET }}
         force: true
         clean: true
