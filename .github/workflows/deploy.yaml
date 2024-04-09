@@ -32,6 +32,5 @@ jobs:
         folder: build
         repository-name: gradynn/gradynn.github.io
         token: ${{ secrets.GITHUB_TOKEN }}
-        single-commit: true
         force: true
         clean: true
