@@ -28,7 +28,6 @@ jobs:
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: main
         folder: build
         repository-name: gradynn/gradynn.github.io
         token: ${{ secrets.GITHUB_TOKEN }}
