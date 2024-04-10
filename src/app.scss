@@ -1,0 +1,16 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@font-face {
+    font-family: 'Gambarino';
+    src: url('/fonts/Gambarino_Complete/Fonts/WEB/fonts/Gambarino-Regular.woff2') format('woff2'),
+         url('/fonts/Gambarino_Complete/Fonts/WEB/fonts/Gambarino-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: 'Gambarino', serif;
+}

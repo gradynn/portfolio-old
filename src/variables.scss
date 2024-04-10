@@ -1,0 +1,9 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+$colors: (
+    primary: #000000,
+    background: #e1dfdd,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
