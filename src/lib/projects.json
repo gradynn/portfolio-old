@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Project 1",
+        "imageUrl": "/images/project1.jpg",
+        "previewText": "This is a short description of project 1...",
+        "fullText": "Full content of the project 1...",
+        "link": "/projects/project-1"
+    },
+    {
+        "title": "Project 2",
+        "imageUrl": "/images/project2.jpg",
+        "previewText": "This is a short description of project 2...",
+        "fullText": "Full content of the project 2...",
+        "link": "/projects/project-2"
+    }
+]
