@@ -42,6 +42,10 @@
     </section>
     <section id="projects" class="child">
         <h1 class="primary-heading">Projects</h1>
+        <div class="flex flex-col">
+            <h2 class="secondary-heading">What I cannot create, I do not understand.</h2>
+            <h2 class="secondary-heading">- Richard Feynman</h2>
+        </div>
         <Blog />
     </section>
 </div>
