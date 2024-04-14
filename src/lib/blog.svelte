@@ -1,5 +1,6 @@
 <script>
     import projects from './projects.json';
+    import Project from './project.svelte';
 </script>
 
 <style>
@@ -7,54 +8,45 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
-    .project-bubble {
+    .section-header {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 75%;
-        height: 300px;
         margin: 1rem;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .project-bubble img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
+    .primary-heading {
+        font-size: 4rem;
+        margin: 0;
     }
-
-    .project-bubble h3 {
-        margin: 0.5rem 0;
+    
+    .quote {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        margin: 1rem;
     }
-
-    .project-bubble p {
-        margin: 0.5rem 0;
-    }
-
-    .project-bubble a {
-        margin: 0.5rem 0;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        background-color: color('primary');
-        color: white;
-        text-decoration: none;
+    
+    .secondary-heading {
+        margin: 0;
     }
 </style>
 
 <div class="blog-container">
-    {#each projects as project}
-        <div class="project-bubble">
-            <img src={project.imageUrl} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.previewText}</p>
-            <a href={project.link}>Read More</a>
+    <div class="section-header">
+        <p class="primary-heading">Projects</p>
+        <div class="quote">
+            <p class="secondary-heading">What I cannot create, I do not understand.</p>
+            <p class="secondary-heading">- Richard Feynman</p>
         </div>
+    </div>
+    {#each projects as project}
+        <Project {...project} />
     {/each}
 </div>

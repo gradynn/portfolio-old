@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
     margin: 0;
     box-sizing: border-box;
 }
@@ -41,11 +41,6 @@
         <Profile />
     </section>
     <section id="projects" class="child">
-        <h1 class="primary-heading">Projects</h1>
-        <div class="flex flex-col">
-            <h2 class="secondary-heading">What I cannot create, I do not understand.</h2>
-            <h2 class="secondary-heading">- Richard Feynman</h2>
-        </div>
         <Blog />
     </section>
 </div>

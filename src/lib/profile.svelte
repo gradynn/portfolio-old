@@ -1,63 +1,48 @@
 <style lang="scss">
     .container {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        color: color('primary');
-    }
-    
-    .profile-section {
-        height: 100vh;
-        width: 50%;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        padding-left: 1rem;
-        box-sizing: border-box;
-    }
-    
-    .photo-section {
-        display: flex;
-        background-image: url('/me1.png');
-        background-size: cover;
-        background-position: left;
-        filter: grayscale(1);
-    }
-    
-    .info-section {
+        width: calc(100% - 2rem);
+        height: calc(100vh - 2rem);
+        border: 0.2rem solid #0b0d32;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: left;
-    }
-
-    h1 {
-        font-size: 4rem;
-        border-bottom: 1px solid color('primary');
-        width: fit-content;
-    }
-
-    .fa-envelope {
-        font-size: 2rem;
-        padding-right: 1rem;
-    }
-
-    .email {
-        display: flex;
         align-items: center;
+        justify-content: center;
+        color: #0b0d32;
+        position: relative; 
+        padding: 1rem; 
+        box-sizing: border-box; 
     }
-    
-    /* Removed img styles since we're now using background-image */
+
+    .name, .subtitle, .phone, .description {
+        margin: 0; 
+        position: static; 
+    }
+
+    .name {
+        font-size: 5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .phone {
+        position: absolute; 
+        top: 0.5rem; 
+        left: 1rem; 
+        font-size: 3rem; 
+    }
+
+    .description {
+        position: absolute; 
+        bottom: 1rem; 
+        font-size: 2rem; 
+    }
 </style>
-    
+
 <div class="container">
-    <div class="profile-section photo-section">
-    </div>
-    <div class="profile-section info-section">
-        <h1>Gradyn Nagle</h1>
-        <div class="email">
-            <span class="material-icons">email</span>
-            <h2>gnagle@ucdavis.edu</h2>
-        </div>
-    </div>
+    <p class="name">GRADYN NAGLE</p>
+    <p class="subtitle">Full Stack Software Engineer</p>
+    <p class="phone">510-219-1647</p>
+    <p class="description">University of California, Davis | B.S. Computer Science | email gnagle@ucdavis.edu</p>
 </div>
